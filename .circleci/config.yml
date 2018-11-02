@@ -1,0 +1,18 @@
+# Golang CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-go/ for more details
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version
+      - image: circleci/golang:1.11.1
+    working_directory: /go/src/github.com/Kasita-Inc/quimby
+    steps:
+      - checkout
+
+      # specify any bash command here prefixed with `run: `
+      - run: make test
+notify:
+  webhooks:
+    - url: http://ec2-54-87-140-130.compute-1.amazonaws.com/hook/circlci

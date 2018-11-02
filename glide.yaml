@@ -1,0 +1,13 @@
+package: github.com/Kasita-Inc/quimby
+import:
+- package: github.com/Kasita-Inc/gadget
+  subpackages:
+  - errors
+  - generator
+  - log
+  - stringutil
+testImport:
+- package: github.com/stretchr/testify
+  version: v1.2.2
+  subpackages:
+  - assert
