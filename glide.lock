@@ -1,4 +1,35 @@
-hash: ee2ac2832dbe65f928c6b04132784ca66def647764ea629b49b2322a0ba2f53e
-updated: 2018-11-02T10:09:16.719346-05:00
-imports: []
-testImports: []
+hash: d42a29a2b64ab4c10ae26127c6aaedef05e9384c5e2f5bf54f5adc8fbbf8f039
+updated: 2018-11-02T14:55:57.724338-05:00
+imports:
+- name: github.com/go-stack/stack
+  version: 2fee6af1a9795aafbe0253a0cfbdf668e1fb8a9a
+- name: github.com/golang/protobuf
+  version: aa810b61a9c79d51363740d207bb46cf8e620ed5
+  subpackages:
+  - proto
+  - ptypes
+  - ptypes/timestamp
+- name: github.com/google/uuid
+  version: d460ce9f8df2e77fb1ba55ca87fafed96c607494
+- name: github.com/Kasita-Inc/gadget
+  version: 995541877f460be1c9cb3329b7fbadeaeb23a102
+  subpackages:
+  - collection
+  - errors
+  - generator
+  - intutil
+  - log
+  - stringutil
+testImports:
+- name: github.com/davecgh/go-spew
+  version: d8f796af33cc11cb798c1aaeb27a4ebc5099927d
+  subpackages:
+  - spew
+- name: github.com/pmezard/go-difflib
+  version: 792786c7400a136282c1664665ae0a8db921c6c2
+  subpackages:
+  - difflib
+- name: github.com/stretchr/testify
+  version: f35b8ab0b5a2cef36673838d662e249dd9c94686
+  subpackages:
+  - assert
